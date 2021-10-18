@@ -1,10 +1,53 @@
 .contacts {
   position: relative;
   background-color: var(--primary-bg-color);
-}
-.contact-list {
-  //   position: absolute;
-  //   top: -65px;
+
+  &__list {
+    //   position: absolute;
+    //   top: -65px;
+  }
+
+  &__btn {
+    display: block;
+    width: 160px;
+    padding: 12px 12px;
+    border: transparent;
+    border-radius: 22px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: var(21 / 16);
+
+    background-color: var(--main-accent-color);
+    color: var(--primary-text-color);
+
+    transition: background-color 700ms cubic-bezier(0.4, 0, 0.2, 1),
+      color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      color: var(--main-accent-color);
+      background-color: var(--white-bg);
+    }
+    &_color {
+      margin-top: 10px;
+      
+      color: var(--main-accent-color);
+      background-color: var(--white-bg);
+
+      transition: background-color 700ms cubic-bezier(0.4, 0, 0.2, 1),
+        color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+      &:hover,
+      &:focus {
+        background-color: var(--main-accent-color);
+        color: var(--primary-text-color);
+      }
+    }
+  }
+  .btn__item {
+    font-size: 11px;
+    margin-left: 10px;
+  }
 }
 
 .contact-item {
