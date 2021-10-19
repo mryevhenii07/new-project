@@ -1,15 +1,48 @@
 .contacts {
-  position: relative;
-  height: 1585px;
- 
-  outline: 1px solid red;
-  &__contacts-wrap {
-    outline: 1px solid green;
-    position: absolute;
-    top: -65px;
-    left: 28%;
-    transform: translate(-50% -50%);
+  background-image: linear-gradient(
+    var(--white-bg) 12%,
+    var(--primary-bg-color) 12%,
+    var(--primary-bg-color) 85%
+  );
+
+  padding-bottom: 165px;
+  display: flex;
+  @media screen and (min-width: 1200px) {
+    background-image: url('../images/desktop/contacts-desk_1.png'),
+      linear-gradient(var(--white-bg) 12%, var(--primary-bg-color) 12%, var(--primary-bg-color) 85%);
+    background-repeat: no-repeat;
+    background-position-x: center;
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('../images/desktop/contacts-desk_1@2x.png'),
+        linear-gradient(
+          var(--white-bg) 12%,
+          var(--primary-bg-color) 12%,
+          var(--primary-bg-color) 85%
+        );
+      background-repeat: no-repeat;
+      background-position-x: center;
+    }
   }
+
+  outline: 1px solid red;
+
+  &__list {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      margin-top: -20px;
+      margin-left: -20px;
+    }
+  }
+
+  &-wrap {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      justify-content: center;
+      margin-top: 113px;
+    }
+  }
+
   &__btn {
     display: block;
     margin: 50px auto 0;
@@ -32,6 +65,11 @@
       color: var(--main-accent-color);
       background-color: var(--white-bg);
     }
+    @media screen and (min-width: 768px) {
+      margin: 0;
+      margin-right: 15px;
+    }
+
     &_color {
       margin-top: 10px;
 
@@ -46,8 +84,12 @@
         background-color: var(--main-accent-color);
         color: var(--primary-text-color);
       }
+      @media screen and (min-width: 768px) {
+        margin-top: 0;
+      }
     }
   }
+
   .btn__item {
     font-size: 11px;
     margin-left: 10px;
@@ -61,6 +103,14 @@
   &:not(:last-child) {
     margin-bottom: 20px;
   }
+  @media screen and (min-width: 768px) {
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+    flex-basis: calc(100% / 3 - 20px);
+    margin-top: 20px;
+    margin-left: 20px;
+  }
 
   font-size: 12px;
   font-weight: 500;
@@ -68,6 +118,9 @@
   line-height: 1.9;
   background-color: var(--white-bg);
   box-shadow: var(--contact-card-shadow);
+  @media screen and (min-width: 768px) {
+    width: 220px;
+  }
 
   &__representation {
     display: inline-block;
@@ -82,9 +135,11 @@
       background-color: var(--secondary-bg-color-2);
     }
   }
+
   &__city {
     margin-bottom: 10px;
   }
+
   &__description {
     color: var(--accent-text-color);
     line-height: calc(18 / 12);
@@ -93,12 +148,14 @@
     padding-bottom: 25px;
     margin-bottom: 25px;
   }
+
   &__opening-time {
     color: var(--pre-title-color);
     &_margin {
       margin-bottom: 10px;
     }
   }
+
   &__link {
     display: block;
     color: var(--accent-text-color);
@@ -109,3 +166,41 @@
     }
   }
 }
+
+//  @media screen and (min-width: 768px) {
+
+//   }
+// .hero {
+//   display: flex;
+//   align-items: center;
+//   height: 400px;
+//   width: 480px;
+//   margin: 0 auto;
+//   text-align: center;
+//   background-color: var(--dark-bg-color);
+//   background-repeat: no-repeat;
+//   background-position: center;
+
+//   background-image:url(../images/hero/bg-phone.jpg);
+
+//   @media screen and (min-width: 1200px) {
+//    width: 1920px;
+// height: 382px;
+//     background-image: linear-gradient(
+//         rgba(47, 48, 58, 0.4),
+//         rgba(47, 48, 58, 0.4)
+//       ),
+//       url(../images/hero/bg-desktop.jpg);
+
+//     @media (min-device-pixel-ratio: 2),
+//       (min-resolution: 192dpi),
+//       (min-resolution: 2dppx) {
+//       background-image: linear-gradient(
+//           rgba(47, 48, 58, 0.4),
+//           rgba(47, 48, 58, 0.4)
+//         ),
+//         url(../images/hero/bg-desktop@2x.jpg);
+//       background-size: 1920px 382px;
+//     }
+//   }
+// }
