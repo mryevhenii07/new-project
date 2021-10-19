@@ -1,7 +1,9 @@
+
+
 .about{
     background: #fff5f6;
         @media screen and (min-width: 1280px) {
-            background: #fff5f6 url("../images/desktop/bg_about.png") no-repeat;
+            background: url("../images/desktop/bg_about.png") no-repeat;
             background-size: contain;
             
           }
@@ -63,7 +65,7 @@
     padding-top: 125px;
     @media screen and (min-width: 768px) {
         width: 340px;
-            margin-top: 100px;
+           
         }
         @media screen and (min-width: 1280px) {
             font-size: 30px;
