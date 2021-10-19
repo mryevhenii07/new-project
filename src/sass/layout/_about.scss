@@ -1,32 +1,60 @@
 .about{
-   background-color: #FFF5F6;
-// background-image: url(./src/images/desktop/bg_about.png);
+    border: 1px solid red;
+    background: #fff5f6 url("../images/desktop/bg_about.png") no-repeat;
+    background-size: contain;
 
 }
 
 .img{
-    margin-left: 112px;
-    margin-bottom: 65px;
-
+    margin-left: 20px;
+    margin-bottom: 26px;
+    @media screen and (min-width: 768px) {
+        margin-left: 39px;
+        margin-bottom: 50px;
+        width: 340px;
+            height: 339px;
+        }
+        @media screen and (min-width: 1280px) {
+            margin-left: 112px;
+            margin-bottom: 55px;
+            width: 516px;
+            height: 516px;
+            
+          }
 }
 
 .about__list{
-    display: flex;
-    max-width: 1280px;
+    
+    @media screen and (min-width: 768px) {
+        display: flex;
+        }
+        @media screen and (min-width: 1280px) {
+         
+          }
 
 }
 .block{
-    width: 463px;
-    margin-left: 74px;
-    margin-right: 112px;
-    margin-top: 106px;
+            width: 220px;
+           margin: auto;
+            margin-top: 46px;
+    @media screen and (min-width: 768px) {
+        width: 340px;
+            margin-left: 17px;
+            margin-right: 36px;
+            margin-top: 100px;
+        }
+        @media screen and (min-width: 1280px) {
+            width: 463px;
+            margin-left: 74px;
+            margin-right: 112px;
+            margin-top: 106px;
+           
+          }
 }
 .break{
     margin-bottom: 35px;
 }
-.break-second{
-    margin-bottom: 45px;
-}
+
 
 .about__pretext{
     font-size: 30px;
