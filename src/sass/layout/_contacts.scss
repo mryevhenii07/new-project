@@ -1,9 +1,16 @@
 .contacts {
   background-image: linear-gradient(
-    var(--white-bg) 12%,
-    var(--primary-bg-color) 12%,
-    var(--primary-bg-color) 85%
+    var(--white-bg) 5%,
+    var(--primary-bg-color) 5%,
+    var(--primary-bg-color) 95%
   );
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(
+      var(--white-bg) 12%,
+      var(--primary-bg-color) 12%,
+      var(--primary-bg-color) 85%
+    );
+  }
 
   padding-bottom: 165px;
   display: flex;
@@ -28,8 +35,11 @@
   outline: 1px solid red;
 
   &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     @media screen and (min-width: 768px) {
-      display: flex;
+      flex-direction: row;
       margin-top: -20px;
       margin-left: -20px;
     }
@@ -53,6 +63,7 @@
     font-weight: 700;
     font-size: 16px;
     line-height: var(21 / 16);
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
 
     background-color: var(--main-accent-color);
     color: var(--primary-text-color);
@@ -68,6 +79,7 @@
     @media screen and (min-width: 768px) {
       margin: 0;
       margin-right: 15px;
+      width: 191px;
     }
 
     &_color {
@@ -103,14 +115,6 @@
   &:not(:last-child) {
     margin-bottom: 20px;
   }
-  @media screen and (min-width: 768px) {
-    &:not(:last-child) {
-      margin-bottom: 0;
-    }
-    flex-basis: calc(100% / 3 - 20px);
-    margin-top: 20px;
-    margin-left: 20px;
-  }
 
   font-size: 12px;
   font-weight: 500;
@@ -118,8 +122,18 @@
   line-height: 1.9;
   background-color: var(--white-bg);
   box-shadow: var(--contact-card-shadow);
+
   @media screen and (min-width: 768px) {
     width: 220px;
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+    flex-basis: calc(100% / 3 - 20px);
+    margin-top: 20px;
+    margin-left: 20px;
+    @media screen and (min-width: 1200px) {
+      font-size: 16px;
+    }
   }
 
   &__representation {
@@ -166,41 +180,3 @@
     }
   }
 }
-
-//  @media screen and (min-width: 768px) {
-
-//   }
-// .hero {
-//   display: flex;
-//   align-items: center;
-//   height: 400px;
-//   width: 480px;
-//   margin: 0 auto;
-//   text-align: center;
-//   background-color: var(--dark-bg-color);
-//   background-repeat: no-repeat;
-//   background-position: center;
-
-//   background-image:url(../images/hero/bg-phone.jpg);
-
-//   @media screen and (min-width: 1200px) {
-//    width: 1920px;
-// height: 382px;
-//     background-image: linear-gradient(
-//         rgba(47, 48, 58, 0.4),
-//         rgba(47, 48, 58, 0.4)
-//       ),
-//       url(../images/hero/bg-desktop.jpg);
-
-//     @media (min-device-pixel-ratio: 2),
-//       (min-resolution: 192dpi),
-//       (min-resolution: 2dppx) {
-//       background-image: linear-gradient(
-//           rgba(47, 48, 58, 0.4),
-//           rgba(47, 48, 58, 0.4)
-//         ),
-//         url(../images/hero/bg-desktop@2x.jpg);
-//       background-size: 1920px 382px;
-//     }
-//   }
-// }
