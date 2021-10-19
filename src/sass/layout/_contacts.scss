@@ -1,0 +1,105 @@
+.contacts {
+  position: relative;
+  background-color: var(--primary-bg-color);
+
+  &__list {
+    //   position: absolute;
+    //   top: -65px;
+  }
+
+  &__btn {
+    display: block;
+    width: 160px;
+    padding: 12px 12px;
+    border: transparent;
+    border-radius: 22px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: var(21 / 16);
+
+    background-color: var(--main-accent-color);
+    color: var(--primary-text-color);
+
+    transition: background-color 700ms cubic-bezier(0.4, 0, 0.2, 1),
+      color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      color: var(--main-accent-color);
+      background-color: var(--white-bg);
+    }
+    &_color {
+      margin-top: 10px;
+      
+      color: var(--main-accent-color);
+      background-color: var(--white-bg);
+
+      transition: background-color 700ms cubic-bezier(0.4, 0, 0.2, 1),
+        color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+      &:hover,
+      &:focus {
+        background-color: var(--main-accent-color);
+        color: var(--primary-text-color);
+      }
+    }
+  }
+  .btn__item {
+    font-size: 11px;
+    margin-left: 10px;
+  }
+}
+
+.contact-item {
+  width: 225px;
+  margin-bottom: 20px;
+  padding: 43px 20px;
+  border-radius: 24px;
+
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  line-height: 1.9;
+  background-color: var(--white-bg);
+  box-shadow: var(--contact-card-shadow);
+
+  &__representation {
+    display: inline-block;
+    padding: 0 30px;
+    margin-bottom: 30px;
+    border-radius: 6px;
+
+    color: var(--title-text-color);
+    background-color: var(--secondary-bg-color-1);
+
+    &_bg-color {
+      background-color: var(--secondary-bg-color-2);
+    }
+  }
+  &__city {
+    margin-bottom: 10px;
+  }
+  &__description {
+    color: var(--accent-text-color);
+    line-height: calc(18 / 12);
+
+    border-bottom: 1px solid #e1e1e1;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+  }
+  &__opening-time {
+    color: var(--pre-title-color);
+    &_margin {
+      margin-bottom: 10px;
+    }
+  }
+  &__link {
+    display: block;
+    color: var(--accent-text-color);
+    &_border {
+      margin-top: 25px;
+      padding-top: 25px;
+      border-top: 1px solid #e1e1e1;
+    }
+  }
+}
