@@ -1,9 +1,9 @@
 
 
 .about{
-    background: #fff5f6;
+    background: #FFF5F6;
         @media screen and (min-width: 1280px) {
-            background: url("../images/desktop/bg_about.png") no-repeat;
+            background: #FFF5F6 url("../images/desktop/bg_about.png") no-repeat;
             background-size: contain;
             
           }
@@ -65,7 +65,7 @@
     padding-top: 125px;
     @media screen and (min-width: 768px) {
         width: 340px;
-           
+       
         }
         @media screen and (min-width: 1280px) {
             font-size: 30px;
@@ -87,16 +87,32 @@
         font-size: 48px;
         }
         @media screen and (min-width: 1280px) {
+            width: 534px;
             font-size: 58px;
             
           }
 }
-.about__text{
+.about__text {
     font-size: 16px;
     font-family: var(--primary-font-family);
     color: #000000;
-    margin-left: 124px;
-   
+    margin-left: auto;
+    margin-right: auto;
+    
+    display: flex;
+    justify-content: center;
+    @media screen and (min-width: 768px) {
+        width: 340px;
+        margin-left: 17px;
+     
+    }
+    @media screen and (min-width: 1280px) {
+        width: 463px;
+        margin-left: 74px;
+        margin-right: 112px;
+        margin-top: 106px;
+       
+      }
 }
 
 .about__textafter{
