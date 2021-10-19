@@ -20,8 +20,17 @@
                
     <ul class="about__list">
               <li>
-               <img class="img" src="./images/desktop/about@2-min.png" width="516px" height="516px" alt="корова с молоком">
-               <!-- <img src="./images/desktop/bg_about.png" alt=""> -->
+             
+               <picture>
+                <img class="img" src="./images/mob/about@2-min.png"  alt="корова с молоком">
+                
+                <source srcset="./images/desktop/about-min.png, ./images/desktop/about@2-min.png" media="(min-width: 1200px)">
+
+                <source srcset="./images/tablet/about-min.png, ./images/tablet/about@2-min.png" media="(min-width: 768px)">
+
+                <source srcset="./images/mob/about-min.png, ./images/mob/about@2-min.png" media="(min-width: 280px)"> 
+      
+            </picture>
               </li>
               <li class="about__text">
 
