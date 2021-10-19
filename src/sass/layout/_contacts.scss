@@ -1,14 +1,18 @@
 .contacts {
   position: relative;
-  background-color: var(--primary-bg-color);
-
-  &__list {
-    //   position: absolute;
-    //   top: -65px;
+  height: 1585px;
+ 
+  outline: 1px solid red;
+  &__contacts-wrap {
+    outline: 1px solid green;
+    position: absolute;
+    top: -65px;
+    left: 28%;
+    transform: translate(-50% -50%);
   }
-
   &__btn {
     display: block;
+    margin: 50px auto 0;
     width: 160px;
     padding: 12px 12px;
     border: transparent;
@@ -30,7 +34,7 @@
     }
     &_color {
       margin-top: 10px;
-      
+
       color: var(--main-accent-color);
       background-color: var(--white-bg);
 
@@ -52,9 +56,11 @@
 
 .contact-item {
   width: 225px;
-  margin-bottom: 20px;
   padding: 43px 20px;
   border-radius: 24px;
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
 
   font-size: 12px;
   font-weight: 500;
