@@ -1,15 +1,19 @@
-.header {
+.background {
   background-color: var(--accent-bg-color);
+}
+.header {
   padding-top: 38px;
   padding-bottom: 27px;
   display: flex;
-  width: 100%;
+  width: 320px;
   justify-content: space-between;
   align-items: center;
   @media screen and (min-width: 768px) {
+    width: 768px;
     padding-bottom: 0;
   }
   @media screen and (min-width: 1280px) {
+    width: 1280px;
     padding-right: 100px;
     padding-left: 46px;
   }
