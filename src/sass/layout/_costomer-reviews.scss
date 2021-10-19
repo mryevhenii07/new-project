@@ -1,3 +1,14 @@
+.customer{
+    padding: 0 20px;
+    @media screen and (min-width: 768px){
+        width: 740px;
+        @media screen and (min-width: 1280px) {
+        width: 925px;
+      
+    }
+    }
+}
+
 .customer__img{ 
     display: flex;
     justify-content: center;
@@ -8,15 +19,19 @@
     }
     @media screen and (min-width: 1280px) {
         margin-bottom: 15px;
+        //width: 895px;
     }
 }
 
 .customer__icon-text{
     position: relative;
+    //background-color: #FAFAFA;
+	//padding: 44px 50px 16px;
     padding: 49px 39px 20px 84px;
     margin-bottom: 36px;
     @media screen and (min-width: 768px) {
         padding: 30px 36px 28px 40px;
+        //padding: 47px 60px 27px;
         margin-bottom: 24px;
 
     }
@@ -26,29 +41,48 @@
     }
 }
 
+
 .customer__icon{
-    transform: rotate(-180deg);
+   
     position: absolute;
-    left: 72px;
+    left: 89px;
     top: 27px;
     z-index: -2;
+    @media screen and (min-width: 768px) {
+        left: 40px;
+        top: 14px;
+    }
+    @media screen and (min-width: 1280px) {
+        
+        //left: 40px;
+        //top: 14px;
+        }
 }
 
+
+
 .customer__text {
+//padding: 0 18px;
+
+    width: 160px;
     font-weight: 500;
     font-size: 12px;
     line-height: 2.55;
     text-align: center;
-    
+    background-image: repeating-linear-gradient(to top, #E1E1E1 0px 1px, transparent 1px 31px);
     @media screen and (min-width: 768px) {
         font-size: 14px;
         line-height: 2.16;
         text-align: center;
         letter-spacing: 0.04em;
+        width: 544px;
+        padding: 0 24px;
     }
     @media screen and (min-width: 1280px) {
         font-size: 16px;
-        line-height: 1.8%;
+        line-height: 1.8;
+        width: 822px;
+        padding: 0 4px
     }
 }
 
@@ -102,14 +136,29 @@ justify-content: center;
     justify-content: center;
     align-items: center;
 }
-.customer__slider-item{
+
+
+   //////////кнопки слайдера/////
+    
+    .slick-dots li.slick-active button:before {
+    content: '';
     width: 12px;
     height: 12px;
-    border-radius: 6px;
-    background-color: #D9D9D9;
-    margin-right: 18px;
-}
+    font-size: 20px;
+    //color: #D9D9D9;
+    background-image: url(../images/home.svg);
+    background-size: cover;
+    }
 
-.customer__slider-item:last-child{
-    margin-left: 18px;
-   }
+    
+    .slick-dots li button {
+    font-size: 100px;
+    }
+
+    .slick-dots li button:before{
+        font-size: 12px;
+        background: #D9D9D9;
+        width: 12px;
+    height: 12px;
+    line-height: 15px;
+    }
