@@ -1,14 +1,15 @@
 .hero {
-  background-color: var(--accent-bg-color);
   position: relative;
-  width: 100%;
+  width: 320px;
   height: 410px;
   @media screen and (min-width: 768px) {
+    width: 768px;
     height: 316px;
     display: flex;
     justify-content: space-between;
   }
   @media screen and (min-width: 1280px) {
+    width: 1280px;
     height: 578px;
     padding-right: 100px;
     padding-left: 77px;
