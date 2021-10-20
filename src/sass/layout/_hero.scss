@@ -2,7 +2,7 @@
   position: relative;
   width: 320px;
   height: 410px;
-  outline: 1px solid purple;
+  // outline: 1px solid purple;
   @media screen and (min-width: 768px) {
     width: 768px;
     height: 316px;
@@ -71,7 +71,10 @@
 }
 .hero-btns {
   display: flex;
-  // z-index: 2;
+}
+.btn-rotor {
+  background-color: transparent;
+  border: none;
 }
 .hero-primary-btn {
   width: 61px;
