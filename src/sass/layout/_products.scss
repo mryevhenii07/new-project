@@ -1,6 +1,7 @@
 .products_section {
+  border: 1px solid red;
   margin: 0 auto;
-  border: 2px solid red;
+
   @media screen and (max-width: 479px) {
     max-width: 319px;
     padding: 121px 20px 98px 20px;
@@ -11,12 +12,12 @@
     padding: 121px 20px 98px 20px;
   }
   @media screen and (min-width: 768px) {
-    width: 768px;
-    padding: 121px 34px 112px;
+    width: 100%;
+    padding: 121px 15px 112px;
   }
   @media screen and (min-width: 1280px) {
-    width: 1280px;
-    padding: 127px 114px 119px;
+    width: 100%;
+    padding: 127px 20px 119px;
   }
 }
 
@@ -72,6 +73,9 @@
   }
 }
 .product_list {
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
   @media screen and (max-width: 479px) {
     margin-top: 110px;
   }
