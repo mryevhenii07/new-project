@@ -5,16 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 
+    <title>Ice Cream</title>
+
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css"
     />
 
-    <!-- <link rel="shortcut icon" href="./images/favicon.png" type="image/png"> -->
-
-
-    <title>Ice cream</title>
-
+    
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
@@ -75,6 +74,28 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+      integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"
+    ></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('#menu').on('click', 'a', function (event) {
+          event.preventDefault();
+          var id = $(this).attr('href'),
+            top = $(id).offset().top;
+          $('body,html').animate({ scrollTop: top }, 1500);
+        });
+      });
+    </script>
+    <script src="index.js"></script>
 
   </body>
 </html>
