@@ -1,11 +1,9 @@
 
 
 .about{
-    background: #FFF5F6;
+    background-color: #FFF5F6;
         @media screen and (min-width: 1280px) {
-
             background: #FFF5F6 url("../images/desktop/bg_about.png") no-repeat;
-
             background-size: contain;
           }
 }
@@ -65,7 +63,8 @@
     text-align: center;
     padding-top: 125px;
     @media screen and (min-width: 768px) {
-        width: 340px;
+        // width: 340px;
+        font-size: 26px;
         }
         @media screen and (min-width: 1280px) {
             font-size: 30px;
@@ -110,7 +109,7 @@
         width: 463px;
         margin-left: 74px;
         margin-right: 112px;
-        margin-top: 106px;
+       
        
       }
 }
@@ -140,7 +139,7 @@
     transition: opasity 250ms cubic-bezier(0.4, 0, 0.2, 1);
     margin-bottom: 39px;
     @media screen and (min-width: 768px) {
-        margin-bottom: 62px;
+        margin-bottom: 66px;
         }
         @media screen and (min-width: 1280px) {
             margin-bottom: 172px;
