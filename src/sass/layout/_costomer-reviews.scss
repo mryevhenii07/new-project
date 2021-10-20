@@ -1,9 +1,17 @@
 .customer{
+
+
     padding: 0 20px;
+     margin-bottom: 66px;
+        margin-top: 40px;
     @media screen and (min-width: 768px){
         width: 740px;
+        margin-bottom: 103px;
+        margin-top: 61px;
         @media screen and (min-width: 1280px) {
         width: 925px;
+        margin-bottom: 99px;
+        margin-top: 61px;
       
     }
     }
@@ -12,7 +20,7 @@
 .customer__img{ 
     display: flex;
     justify-content: center;
-    margin-bottom: 23px;
+    margin-bottom: 72px;
 
     @media screen and (min-width: 768px) {
         margin-bottom: 19px;
@@ -25,10 +33,11 @@
 
 .customer__icon-text{
     position: relative;
+ 
     //background-color: #FAFAFA;
 	//padding: 44px 50px 16px;
-    padding: 49px 39px 20px 84px;
-    margin-bottom: 36px;
+    //padding: 49px 39px 20px 84px;
+    margin-bottom: 50px;
     @media screen and (min-width: 768px) {
         padding: 30px 36px 28px 40px;
         //padding: 47px 60px 27px;
@@ -43,19 +52,22 @@
 
 
 .customer__icon{
-   
     position: absolute;
-    left: 89px;
-    top: 27px;
+    left: 64px;
+    top: -18px;
     z-index: -2;
+    @media screen and (min-width: 480px) {
+    left: 130px;
+    top: -18px;
+    }
     @media screen and (min-width: 768px) {
-        left: 40px;
-        top: 14px;
+    left: 82px;
+    top: 14px;
     }
     @media screen and (min-width: 1280px) {
         
-        //left: 40px;
-        //top: 14px;
+    left: 30px;
+    
         }
 }
 
@@ -63,7 +75,8 @@
 
 .customer__text {
 //padding: 0 18px;
-
+    margin-left: auto;
+    margin-right: auto;
     width: 160px;
     font-weight: 500;
     font-size: 12px;
@@ -94,7 +107,7 @@
     @media screen and (min-width: 768px) {
         font-size: 16px;
     }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 1280px) {
         font-size: 20px;
     }
 }
@@ -104,7 +117,7 @@
     @media screen and (min-width: 768px) {
         margin-bottom: 15px;
     }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 1280px) {
     }
 }
 
@@ -113,13 +126,20 @@
     @media screen and (min-width: 768px) {
         margin-bottom: 35px;
     }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 1280px) {
     }
 }
 
 .customer__slider-elipse{
 display: flex;
 justify-content: center;
+margin-bottom: 18px;
+@media screen and (min-width: 768px) {
+        margin-bottom: 14px;
+    }
+     @media screen and (min-width: 1280px) {
+         margin-bottom: 20px;
+    }
 
 }
 
@@ -157,8 +177,10 @@ justify-content: center;
 
     .slick-dots li button:before{
         font-size: 12px;
-        background: #D9D9D9;
         width: 12px;
-    height: 12px;
-    line-height: 15px;
+        height: 12px;
+        line-height: 15px;
+        opacity: 1;
+        color: #D9D9D9;
     }
+
