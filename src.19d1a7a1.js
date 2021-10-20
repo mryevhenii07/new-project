@@ -9,4 +9,4 @@ class i{constructor(i){this.page=$(i),this.topLink=this.page.find(".topLink"),$(
 },{}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss"),require("./carousel.js"),require("./mobile-menu.js"),require("./scripts/scroll.js"),(new WOW).init();
 },{"./sass/main.scss":"clu1","./carousel.js":"VYrc","./mobile-menu.js":"Cz5k","./scripts/scroll.js":"QN18"}]},{},["Focm"], null)
-//# sourceMappingURL=/new-project/src.9ba7a5f9.js.map
+//# sourceMappingURL=/new-project/src.19d1a7a1.js.map
