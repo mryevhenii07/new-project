@@ -2,6 +2,9 @@
 .sectiom-ft {
     background-color: var(--primary-bg-color);
 }
+.container-footer {
+  padding-top: 20px;
+}
 
 .footer-section {
     margin: 0 auto;
@@ -9,7 +12,7 @@
     display: flex;
     justify-content: space-between;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     font-size: 30px;
 line-height: calc(34 / 30);
   }
@@ -19,7 +22,7 @@ line-height: calc(34 / 30);
     @media screen and (min-width: 768px) {
       width: 340px;
       }
-      @media screen and (min-width: 1200px) {
+      @media screen and (min-width: 1280px) {
         width: auto;
         }
 }
@@ -37,7 +40,7 @@ color: var(--pre-title-color);
     font-size: 26px;
     line-height: calc(29 / 26);
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     font-size: 30px;
 line-height: calc(34 / 30);
   }
@@ -55,7 +58,7 @@ margin-bottom: 43px;
     line-height: calc(55 / 48);
 
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     font-size: 58px;
     line-height: calc(66 / 58);
   }
@@ -75,9 +78,12 @@ margin-bottom: 43px;
   margin-left: 15px;
   fill: var(--accent-bg-color)
 }
-.footer-contact-icon:hover
+.footer-contact-icon:hover,
+.footer-contact-icon:focus
  {
     fill: var(--main-accent-color);
+    transition: opasity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
 }
 .footer-contact {
 font-family: DM Sans;
@@ -86,7 +92,7 @@ font-size: 12px;
 line-height: 186%;
 text-align: right;
 color:var(--secondary-text-color);
-@media screen  and (min-width: 1200px) {
+@media screen  and (min-width: 1280px) {
   font-size: 16px;
 letter-spacing: 0.02em;
 }
@@ -95,9 +101,10 @@ letter-spacing: 0.02em;
   color: var(--main-accent-color);
 }
 .footer-text-bottom {
-    margin: 0 auto;
-    width: 150px;
+  display: block;
+    width: 100vw;
   text-align: center;
+  margin: 0 auto;
   margin-top: 65px;
   margin-bottom: 10px;
   font-family: DM Sans;
@@ -106,12 +113,13 @@ letter-spacing: 0.02em;
  line-height: 1.5;
  letter-spacing: 0.02em;
  color: var(--accent-text-color);
+ border-top: 1px solid #E1E1E1;
 @media screen and (min-width: 768px) {
     width: 100%;
   line-height: 186%;
   margin-top: 120px;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
     margin-top: 97px;
   }
 }
