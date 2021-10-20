@@ -1,10 +1,13 @@
 .topLink {
-    position: fixed;
-    bottom: 50px;
-    right: 20px;
-    
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+
   font-family: var(--accent-font-family);
   // color: var(--main-accent-color);
   color: var(--pre-title-color);
-  font-size: 20px;
+  font-size: 16px;
+  @media screen and (min-width: 768px) {
+    font-size: 20px; 
+  }
 }
