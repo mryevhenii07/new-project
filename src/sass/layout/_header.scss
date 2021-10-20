@@ -1,0 +1,116 @@
+.background {
+  background-color: var(--accent-bg-color);
+}
+.header {
+  padding-top: 38px;
+  padding-bottom: 27px;
+  display: flex;
+  width: 320px;
+  justify-content: space-between;
+  align-items: center;
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    padding-bottom: 0;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 1280px;
+    padding-right: 100px;
+    padding-left: 46px;
+  }
+}
+.header-nav {
+  display: none;
+  @media screen and (min-width: 1280px) {
+    display: flex;
+    z-index: 3;
+  }
+}
+.header-list {
+  display: flex;
+}
+.header-item {
+  margin-right: 35px;
+}
+.header-link {
+  font-family: var(--primary-font-family);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(21 / 16);
+  align-items: center;
+  color: var(--title-text-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: var(--main-accent-color);
+  }
+}
+.header-btns {
+  display: flex;
+  z-index: 3;
+}
+.btn-open {
+  background-color: transparent;
+  border: none;
+  width: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  @media screen and (min-width: 768px) {
+    margin-right: 30px;
+  }
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
+}
+.header-burg {
+  width: 20px;
+  height: 1px;
+  display: block;
+  position: relative;
+  border: 1px solid var(--main-accent-color);
+  &::before {
+    content: '';
+    width: 20px;
+    height: 100%;
+    display: block;
+    position: absolute;
+    border: 1px solid var(--main-accent-color);
+    top: 6px;
+    right: -1px;
+  }
+  &::after {
+    content: '';
+    width: 20px;
+    height: 100%;
+    display: block;
+    position: absolute;
+    border: 1px solid var(--main-accent-color);
+    bottom: 6px;
+    right: -1px;
+  }
+}
+.header-btn {
+  font-family: var(--primary-font-family);
+  width: 160px;
+  height: 44px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(21 / 16);
+  // display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  border-radius: 22px;
+  border: 0;
+  color: var(--main-accent-color);
+  background: var(--white-bg);
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+}
+.btn-icon {
+  font-size: 13px;
+  margin-left: 12px;
+}

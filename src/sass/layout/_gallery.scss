@@ -3,12 +3,15 @@
   height: 430px;
   background-image: url(../images/mob/gallery-mob.jpg);
   background-repeat: no-repeat;
+
   background-size: contain;
   background-size: 100vw;
+
   @media screen and (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
       background-image: url(../images/mob/gallery-mob@2x.jpg);}
+
       @media screen and(min-width:768px) {
         background-image: url(../images/tablet/gallery-min.jpg);
         @media screen and(min-width:768px) and (min-device-pixel-ratio: 2),
@@ -24,5 +27,6 @@
         (min-resolution: 2dppx) {
           background-image: url(../images/desktop/gallery@2.jpg);
         }
+
       }
 }
