@@ -8,5 +8,5 @@ const menurefs = {
   menurefs.closeMenuBtn.addEventListener('click', toggleMenu);
 
   function toggleMenu() {
-    menurefs.menuBackdrop.classList.toggle('visually-hidden');
+    menurefs.menuBackdrop.classList.toggle('is-hidden');
   }
