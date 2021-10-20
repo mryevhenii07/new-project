@@ -20,19 +20,23 @@
 
   @media screen and (min-width: 1280px) {
     padding-bottom: 145px;
-    background-image: url('../images/desktop/contacts-desk_1.png'),
-      linear-gradient(var(--white-bg) 15%, var(--primary-bg-color) 15%, var(--primary-bg-color) 85%);
+    background-image: linear-gradient(
+        var(--white-bg) 15%,
+        var(--primary-bg-color) 15%,
+        var(--primary-bg-color) 85%
+      ),
+      url('../images/desktop/contacts-desk_1.png');
 
     background-repeat: no-repeat;
     background-position-x: center;
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url('../images/desktop/contacts@2x-desktop.png');
       background-image: linear-gradient(
-        var(--white-bg) 15%,
-        var(--primary-bg-color) 15%,
-        var(--primary-bg-color) 85%
-      );
+          var(--white-bg) 15%,
+          var(--primary-bg-color) 15%,
+          var(--primary-bg-color) 85%
+        ),
+        url('../images/desktop/contacts@2x-desktop.png');
       // background-repeat: no-repeat;
       // background-position-x: center;
     }
