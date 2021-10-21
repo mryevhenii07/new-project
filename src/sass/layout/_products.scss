@@ -1,4 +1,6 @@
 .products_section {
+  margin-left: auto;
+  margin-right: auto;
   @media screen and (max-width: 479px) {
     max-width: 319px;
     padding: 121px 20px 98px 20px;
