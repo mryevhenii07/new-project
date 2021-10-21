@@ -2,6 +2,7 @@
 
 .about{
     background-color: #FFF5F6;
+   
         @media screen and (min-width: 1280px) {
             background: #FFF5F6 url("../images/desktop/bg_about.png") no-repeat;
             background-size: contain;
@@ -97,15 +98,22 @@
     color: #000000;
     margin-left: auto;
     margin-right: auto;
-    
+    line-height: 1.58;
     display: flex;
     justify-content: center;
+    background-image: url("../images/desktop/bg_about.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+   
     @media screen and (min-width: 768px) {
         width: 340px;
         margin-left: 17px;
-     
+        line-height: 1.78;
+        background-image: none;
     }
     @media screen and (min-width: 1280px) {
+        line-height: 1.75;
         width: 463px;
         margin-left: 74px;
         margin-right: 112px;
@@ -114,11 +122,15 @@
       }
 }
 
+
+
 .about__textafter{
+//   width: 320px;
     font-size: 14px;
     font-family: var(--primary-font-family);
     color: #907E82;
     margin-bottom: 35px;
+    
 }
 
 .btn{
@@ -149,3 +161,8 @@
              
           }
 }
+
+.btn__item {
+    font-size: 11px;
+    margin-left: 10px;
+  }
