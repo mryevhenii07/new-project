@@ -2,7 +2,7 @@
   background-color: var(--accent-bg-color);
 }
 .header {
-  outline: 1px solid purple;
+  // outline: 1px solid purple;
   padding-top: 38px;
   padding-bottom: 27px;
   display: flex;
@@ -107,8 +107,14 @@
   color: var(--main-accent-color);
   background: var(--white-bg);
   display: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   @media screen and (min-width: 768px) {
     display: flex;
+    &:focus,
+    &:hover {
+      color: var(--white-bg);
+      background-color: var(--main-accent-color);
+    }
   }
 }
 .btn-icon {

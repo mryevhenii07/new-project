@@ -1,8 +1,8 @@
 .hero {
   position: relative;
-  width: 320px;
   height: 410px;
-  outline: 1px solid purple;
+  width: 100%;
+  // outline: 1px solid purple;
   @media screen and (min-width: 768px) {
     width: 768px;
     height: 316px;
@@ -42,6 +42,7 @@
   @media screen and (min-width: 768px) {
     font-size: 22px;
     line-height: calc(25 / 22);
+    margin-top: 15px;
   }
   @media screen and (min-width: 1280px) {
     font-size: 38px;
@@ -71,7 +72,10 @@
 }
 .hero-btns {
   display: flex;
-  // z-index: 2;
+}
+.btn-rotor {
+  background-color: transparent;
+  border: none;
 }
 .hero-primary-btn {
   width: 61px;
@@ -174,7 +178,7 @@
     height: 26px;
   }
 }
-.header-ice {
+.hero-ice {
   position: absolute;
   right: 12px;
   z-index: 1;
