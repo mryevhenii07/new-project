@@ -78,13 +78,21 @@ margin-bottom: 43px;
   margin-left: 15px;
   fill: var(--accent-bg-color)
 }
-.footer-contact-icon:hover,
-.footer-contact-icon:focus
+.footer-link {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+.footer-link:hover .footer-contact-icon
  {
     fill: var(--main-accent-color);
-    transition: opasity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    cursor: pointer;
+    
 }
+.footer-link:focus .footer-contact-icon
+ {
+    fill: var(--main-accent-color);
+   
+}
+
 .footer-contact {
 font-family: DM Sans;
 font-weight: bold;
