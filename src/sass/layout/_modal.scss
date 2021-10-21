@@ -1,33 +1,7 @@
 .backdrop {
-<<<<<<< HEAD
-    position: fixed;
-
-    // position: relative;
-
-    width: 250px;
-    height: 100vh;
-    background-color: #E17992;
-    transition: opasity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    top: 0;
-    right: 0;
-    z-index: 10;
-     }
-.is-hidden {
-  opacity: 0;
-  pointer-events: none;
-  visibility: hidden;
-}
-     
-    .mob-btn {
-        display: flex;
-        justify-content: center;
-         align-items: center;
-    }
-=======
   position: fixed;
 
   // position: relative;
->>>>>>> 4c17b16a370f40ee13aa39bb98347ef0f8de57f2
 
   width: 250px;
   height: 100vh;

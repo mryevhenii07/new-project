@@ -12,8 +12,6 @@ console.log(menurefs)
 
     menurefs.menuBackdrop.classList.toggle('is-hidden');
 
-<<<<<<< HEAD
-=======
 
   }
   menurefs.mobMenulist.addEventListener('click', hiddenMenu);
@@ -22,5 +20,4 @@ console.log(menurefs)
     if(!even.target.classList.contains("mob-menu-link")) return
     menurefs.menuBackdrop.classList.add('is-hidden');
 
->>>>>>> 4c17b16a370f40ee13aa39bb98347ef0f8de57f2
   }
