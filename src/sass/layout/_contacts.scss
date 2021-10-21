@@ -37,12 +37,8 @@
           var(--primary-bg-color) 85%
         ),
         url('../images/desktop/contacts@2x-desktop.png');
-      // background-repeat: no-repeat;
-      // background-position-x: center;
     }
-  }
-
-  outline: 1px solid red;
+  } 
 
   &__list {
     display: flex;
@@ -69,6 +65,7 @@
       margin-top: 86px;
     }
   }
+
   &__btn {
     display: block;
     text-align: center;
@@ -94,6 +91,7 @@
       color: var(--main-accent-color);
       background-color: var(--white-bg);
     }
+    
     @media screen and (min-width: 768px) {
       margin: 0;
       margin-right: 15px;
