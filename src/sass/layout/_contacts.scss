@@ -69,7 +69,7 @@
     display: block;
     text-align: center;
     margin: 50px auto 0;
-    width: 160px;
+    width: 161px;
     height: 44px;
     padding: 12px 12px;
     border: transparent;
@@ -96,6 +96,9 @@
       margin-right: 15px;
       width: 191px;
     }
+      @media screen and (min-width: 1280px) {
+      width: 198px;
+    }
 
     &_color {
       margin-top: 10px;
@@ -113,6 +116,13 @@
       }
       @media screen and (min-width: 768px) {
         margin-top: 0;
+        width: 174px;
+        &:last-child{
+          margin-right: 0;
+        }
+      }
+      @media screen and (min-width: 1280px) {
+        width: 180px;
       }
     }
   }
