@@ -106,7 +106,7 @@
       color: var(--main-accent-color);
       background-color: var(--white-bg);
 
-      transition: background-color 700ms cubic-bezier(0.4, 0, 0.2, 1),
+      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
       &:hover,
@@ -134,7 +134,6 @@
 }
 
 .contact-item {
-  width: 225px;
   padding: 43px 20px;
   border-radius: 24px;
   &:not(:last-child) {
@@ -147,9 +146,8 @@
   line-height: 1.9;
   background-color: var(--white-bg);
   box-shadow: var(--contact-card-shadow);
-
+ 
   @media screen and (min-width: 768px) {
-    width: 220px;
     &:not(:last-child) {
       margin-bottom: 0;
     }
