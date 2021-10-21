@@ -1,8 +1,10 @@
 .gallery {
-  margin-bottom: 120px;
+
+  padding-bottom: 60px;
   background-image: linear-gradient(to bottom, #fff5f6 30%, #fff 30%, #fff 70%);
   @media screen and (max-width: 767px) {
-    margin-bottom: 80px;
+    margin-bottom: 40px;
+
     padding-right: 0px;
   }
 }
