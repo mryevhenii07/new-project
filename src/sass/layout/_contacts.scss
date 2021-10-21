@@ -2,6 +2,7 @@
   display: flex;
   padding-top: 20px;
   padding-bottom: 93px;
+  background-size: contain;
 
   background-image: linear-gradient(
     var(--white-bg) 7%,
@@ -27,18 +28,16 @@
     background-position-x: center;
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url('../images/desktop/contacts@2x-desktop.png');
-      background-image: linear-gradient(
-        var(--white-bg) 15%,
-        var(--primary-bg-color) 15%,
-        var(--primary-bg-color) 85%
-      );
-      // background-repeat: no-repeat;
-      // background-position-x: center;
+      background-image: url('../images/desktop/contacts@2x-desktop.png'),
+        linear-gradient(
+          var(--white-bg) 15%,
+          var(--primary-bg-color) 15%,
+          var(--primary-bg-color) 85%
+
+        );
     }
   }
 
-  outline: 1px solid red;
 
   &__list {
     display: flex;
@@ -65,11 +64,12 @@
       margin-top: 86px;
     }
   }
+
   &__btn {
     display: block;
     text-align: center;
     margin: 50px auto 0;
-    width: 160px;
+    width: 161px;
     height: 44px;
     padding: 12px 12px;
     border: transparent;
@@ -90,10 +90,14 @@
       color: var(--main-accent-color);
       background-color: var(--white-bg);
     }
+
     @media screen and (min-width: 768px) {
       margin: 0;
       margin-right: 15px;
       width: 191px;
+    }
+      @media screen and (min-width: 1280px) {
+      width: 198px;
     }
 
     &_color {
@@ -112,6 +116,13 @@
       }
       @media screen and (min-width: 768px) {
         margin-top: 0;
+        width: 174px;
+        &:last-child{
+          margin-right: 0;
+        }
+      }
+      @media screen and (min-width: 1280px) {
+        width: 180px;
       }
     }
   }
@@ -193,5 +204,5 @@
       border-top: 1px solid #e1e1e1;
     }
   }
+  
 }
-// scroll to up
