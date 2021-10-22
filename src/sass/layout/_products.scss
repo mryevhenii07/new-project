@@ -146,18 +146,17 @@
   position: absolute;
 
   @media screen and (max-width: 479px) {
-    width: 223px;
+    width: 249px;
     top: -123px;
   }
-  // right: 20px;
+
   right: 50%;
   transform: translate(50%);
 
-  //
   @media screen and (min-width: 480px) {
     top: -123px;
-    width: 223px;
-    // right: 20px;
+    width: 249px;
+
     right: 50%;
     transform: translate(50%);
   }
@@ -172,8 +171,8 @@
   }
   @media screen and (min-width: 1280px) {
     top: -210px;
-    width: 330px;
-    // right: 20px;
+    width: 335px;
+
     right: 50%;
     transform: translate(50%);
   }
@@ -182,7 +181,7 @@
   position: absolute;
   @media screen and (max-width: 479px) {
     top: -126px;
-    // right: 75px;
+
     right: 5px;
   }
   @media screen and (min-width: 480px) {

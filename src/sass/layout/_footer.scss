@@ -1,62 +1,60 @@
-
 .sectiom-ft {
-    background-color: var(--primary-bg-color);
+  background-color: var(--primary-bg-color);
+  padding-bottom: 20px;
 }
 .container-footer {
   padding-top: 20px;
 }
 
 .footer-section {
-    margin: 0 auto;
+  margin: 0 auto;
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: space-between;
   }
   @media screen and (min-width: 1280px) {
     font-size: 30px;
-line-height: calc(34 / 30);
+    line-height: calc(34 / 30);
   }
 }
 .left-section {
-    width: 234px;
-    @media screen and (min-width: 768px) {
-      width: 340px;
-      }
-      @media screen and (min-width: 1280px) {
-        width: auto;
-        }
+  width: 234px;
+  @media screen and (min-width: 768px) {
+    width: 340px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: auto;
+  }
 }
-
 
 .Footer-text {
   margin-bottom: 15px;
-font-family: Titan One;
-font-size: 18px;
-line-height: calc(20/ 18);
-letter-spacing: 0.04em;
-text-transform: uppercase;
-color: var(--pre-title-color);
+  font-family: Titan One;
+  font-size: 18px;
+  line-height: calc(20 / 18);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--pre-title-color);
   @media screen and (min-width: 768px) {
     font-size: 26px;
     line-height: calc(29 / 26);
   }
   @media screen and (min-width: 1280px) {
     font-size: 30px;
-line-height: calc(34 / 30);
+    line-height: calc(34 / 30);
   }
 }
 .footer-text-second {
-font-family: Titan One;
-font-size: 34px;
-line-height: calc(39 / 34);
-letter-spacing: 0.06em;
-text-transform: uppercase;
-color: var(--main-accent-color);
-margin-bottom: 43px;
-@media screen and (min-width: 768px) {
+  font-family: Titan One;
+  font-size: 34px;
+  line-height: calc(39 / 34);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--main-accent-color);
+  margin-bottom: 43px;
+  @media screen and (min-width: 768px) {
     font-size: 48px;
     line-height: calc(55 / 48);
-
   }
   @media screen and (min-width: 1280px) {
     font-size: 58px;
@@ -64,70 +62,65 @@ margin-bottom: 43px;
   }
 }
 
-
 .footer-list {
   display: flex;
   justify-content: right;
   align-items: center;
   margin-bottom: 46px;
-@media screen and (min-width: 768px) {
-  margin-bottom: 50px;
-}
+  @media screen and (min-width: 768px) {
+    margin-bottom: 50px;
+  }
 }
 .footer-contact-icon {
   margin-left: 15px;
-  fill: var(--accent-bg-color)
+  fill: var(--accent-bg-color);
 }
 .footer-link {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
 }
-.footer-link:hover .footer-contact-icon
- {
-    fill: var(--main-accent-color);
-    
+.footer-link:hover .footer-contact-icon {
+  fill: var(--main-accent-color);
 }
-.footer-link:focus .footer-contact-icon
- {
-    fill: var(--main-accent-color);
-   
+.footer-link:focus .footer-contact-icon {
+  fill: var(--main-accent-color);
 }
 
 .footer-contact {
-font-family: DM Sans;
-font-weight: bold;
-font-size: 12px;
-line-height: 186%;
-text-align: right;
-color:var(--secondary-text-color);
-@media screen  and (min-width: 1280px) {
-  font-size: 16px;
-letter-spacing: 0.02em;
-}
+  font-family: DM Sans;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 186%;
+  text-align: right;
+  color: var(--secondary-text-color);
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    letter-spacing: 0.02em;
+  }
 }
 .footer-contact-tel {
   color: var(--main-accent-color);
 }
 .footer-text-bottom {
   display: block;
-    // width: 100vw;
+  // width: 100vw;
   text-align: center;
   margin: 0 auto;
   margin-top: 65px;
   margin-bottom: 10px;
   font-family: DM Sans;
- font-weight: bold;
- font-size: 14px;
- line-height: 1.5;
- letter-spacing: 0.02em;
- color: var(--accent-text-color);
- border-top: 1px solid #E1E1E1;
-@media screen and (min-width: 768px) {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--accent-text-color);
+  border-top: 1px solid #e1e1e1;
+  @media screen and (min-width: 768px) {
     width: 100%;
-  line-height: 186%;
-  margin-top: 120px;
-}
-@media screen and (min-width: 1280px) {
+    line-height: 186%;
+    margin-top: 120px;
+  }
+  @media screen and (min-width: 1280px) {
     margin-top: 97px;
   }
 }
