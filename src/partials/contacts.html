@@ -44,7 +44,7 @@
       </li>
       <li class="contact-item contact-list__contact-item">
         <div class="contact-item__representation">CAFE</div>
-        <div class="contact-item__city  wow pulse">New York</div>
+        <div class="contact-item__city wow pulse">New York</div>
         <p class="contact-item__description">
           Fusce ut velit laoreet, tempus arcu molestie vulputate
         </p>
@@ -56,18 +56,21 @@
         <div class="contact-item__opening-time">
           <time> 08:00 </time> AM - <time> 16:00 </time> PM
         </div>
-        <a
-          href="tel:+61(0)383766284 "
-          class="contact-item__link contact-item__link_border"
+        <a href="tel:+61(0)383766284 " class="contact-item__link contact-item__link_border"
           >+61(0) 383 766 284</a
         >
         <a href="mailto:noreply@envato.com" class="contact-item__link">noreply@envato.com</a>
       </li>
     </ul>
     <div class="contacts-wrap contacts__contacts-wrap">
-      <a class="contacts__btn" href="https://goo.gl/maps/Ef9LtSCUm78fniDN9" target="_blank">
+      <!-- <a class="contacts__btn " href="https://goo.gl/maps/Ef9LtSCUm78fniDN9" target="_blank">
         Our Locations<span class="btn__item">&#5171;</span>
-      </a>
+      </a> -->
+
+      <button class="contacts__btn" data-modal-map-open>
+        Our Locations<span class="btn__item">&#5171;</span>
+      </button>
+
       <a
         class="btn contacts__btn contacts__btn_color"
         href="https://topfranchise.com/articles/10-best-ice-cream-franchises-in-usa-in-2019/"
@@ -78,3 +81,24 @@
     </div>
   </div>
 </section>
+<div class="backdrop-map is-hidden" data-modal-map>
+  <div class="modal-map">
+    <button data-modal-map-close class="modal-map-close-btn" type="button">&#65794;</button>
+    <p class="modal-map__description">Our Offices in The USA</p>
+    <div id="map-tabs">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387193.305935303!2d-74.25986548248684!3d40.69714941932609!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2z0J3RjNGOLdCZ0L7RgNC6LCDQodCo0JA!5e0!3m2!1sru!2sua!4v1635070355127!5m2!1sru!2sua"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        class="map"
+      ></iframe>
+
+      <div class="btn-wrap modal-map__btn-wrap">
+        <button class="btn modal-map__btn" data-city="ch">Chicago</button>
+        <button class="btn modal-map__btn" data-city="la">Los Angeles</button>
+        <button class="btn modal-map__btn active" data-city="ny">New York</button>
+      </div>
+    </div>
+  </div>
+</div>
