@@ -27,7 +27,7 @@ class Tabs {
         this.mapTabs = document.getElementById(id);
         this.btns = this.mapTabs.querySelectorAll(".btn");
         this.currentBtn = null;
-        this.prevBtn = this.btns[0];
+        this.prevBtn = this.btns[2];
         this.map = this.mapTabs.querySelector(".map");
 
         this.btns.forEach(currentBtn => {
